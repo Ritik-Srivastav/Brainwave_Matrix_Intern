@@ -30,6 +30,10 @@ app.get('/products', async (req, res) => {
   }
 });
 
+app.get('/',async(req,res) =>{
+  res.send("Hello World")
+})
+
 // Start Server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
