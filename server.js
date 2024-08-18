@@ -15,19 +15,22 @@ app.use(cors());
 app.use(express.json());
 
 const MONGO_URL = process.env.MONGO_URL;
-const PORT = process.env.PORT || 5000;
+const PORT =  5001 || process.env.PORT ;
 
 // Connect to MongoDB
 mongoose.connect(MONGO_URL)
   .then(() => console.log('MongoDB connected'))
-  .catch(err => console.log(err));
+  .catch(err => console.log('MongoDB connection error:', err));
 
 // Get all products
 app.get('/products', async (req, res) => {
+  console.log('Received request for /products');
   try {
     const products = await Product.find();
+    console.log('Products found:', products);
     res.json(products);
   } catch (err) {
+    console.error('Error fetching products:', err);
     res.status(500).json({ message: err.message });
   }
 });
