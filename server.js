@@ -2,10 +2,11 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import path from 'path'; // Import path module
-import Product from './models/Product.js'; // Ensure .js extension is included
+import path from 'path';
+import { fileURLToPath } from 'url';
+import Product from './models/Product.js';
 
-dotenv.config(); // Load environment variables from .env file
+dotenv.config();
 
 const app = express();
 
@@ -31,12 +32,16 @@ app.get('/products', async (req, res) => {
   }
 });
 
+// Resolve __dirname in ES module
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, './client/build')));
 
 // Handle any other requests that aren't handled by the API routes
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', './client/build/index.html'));
+  res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
 // Start Server
