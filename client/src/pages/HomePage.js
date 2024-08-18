@@ -5,13 +5,14 @@ import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 import {useCart} from '../CartContext'
 
+
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [cart , setCart] = useCart()
   // Get all products
   const getAllProducts = async () => {
     try {
-      const { data } = await axios.get("http://localhost:10000/products");
+      const { data } = await axios.get("products.json");
       // Assuming the API response is an array of products
       setProducts(data);
     } catch (error) {
@@ -19,7 +20,7 @@ const Products = () => {
       toast.error("Something Went Wrong");
     }
   };
-
+  
   // Lifecycle method
   useEffect(() => {
     getAllProducts();
