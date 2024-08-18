@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 const MONGO_URL = process.env.MONGO_URL;
-const PORT = 5001;
+const PORT = 5000;
 
 // Connect to MongoDB
 mongoose.connect(MONGO_URL)
