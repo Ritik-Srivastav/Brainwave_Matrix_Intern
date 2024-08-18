@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path'; // Import path module
 import Product from './models/Product.js'; // Ensure .js extension is included
 
 dotenv.config(); // Load environment variables from .env file
@@ -30,9 +31,13 @@ app.get('/products', async (req, res) => {
   }
 });
 
-app.get('/',async(req,res) =>{
-  res.send("Hello World")
-})
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, './client/build')));
+
+// Handle any other requests that aren't handled by the API routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', './client/build/index.html'));
+});
 
 // Start Server
 app.listen(PORT, () => {
