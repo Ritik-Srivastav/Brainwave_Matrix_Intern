@@ -15,13 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 const MONGO_URL = process.env.MONGO_URL;
-<<<<<<< HEAD
-const PORT =  8080 || process.env.PORT ;
-||||||| 6a7f426
-const PORT = process.env.PORT || 5000;
-=======
-
->>>>>>> 5b3b41dec7dafd5d3ae34be0cc4299f402ea93ff
+const PORT =  5000 || process.env.PORT ;
 
 // Connect to MongoDB
 mongoose.connect(MONGO_URL)
@@ -52,8 +46,6 @@ app.use(express.static(path.join(__dirname, './client/build')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
-
-const PORT = process.env.PORT || 8080;
 
 // Start Server
 app.listen(PORT, () => {
