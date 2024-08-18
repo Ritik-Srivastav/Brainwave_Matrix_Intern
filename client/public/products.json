@@ -1,0 +1,59 @@
+[
+    {
+      "_id": "66bf6b379ecbc32ce0bdeaab",
+      "name": "Apple ipad",
+      "price": 799.99,
+      "image": "https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fHww",
+      "quantity": 5
+    },
+    {
+      "_id": "66bf6b379ecbc32ce0bdeaac",
+      "name": "Dell XPS 13",
+      "price": 1299.99,
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wfGVufDB8fDB8fHww",
+      "quantity": 3
+    },
+    {
+      "_id": "66bf6b379ecbc32ce0bdeaae",
+      "name": "HP",
+      "price": 329.99,
+      "image": "https://images.unsplash.com/photo-1489110804417-276c3f517515?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D",
+      "quantity": 70
+    },
+    {
+      "_id": "66bf6b379ecbc32ce0bdeaaf",
+      "name": "Samsung Galaxy Tab S8",
+      "price": 649.99,
+      "image": "https://images.unsplash.com/photo-1487611459768-bd414656ea10?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D",
+      "quantity": 50
+    },
+    {
+      "_id": "66bf6b379ecbc32ce0bdeab0",
+      "name": "Sony Alpha a7 IV",
+      "price": 2499.99,
+      "image": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D",
+      "quantity": 15
+    },
+    {
+      "_id": "66bf6b379ecbc32ce0bdeab1",
+      "name": "Lenovo",
+      "price": 149.99,
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D",
+      "quantity": 85
+    },
+    {
+      "_id": "66bf6b379ecbc32ce0bdeab2",
+      "name": "Macbook",
+      "price": 24.99,
+      "image": "https://images.unsplash.com/photo-1485988412941-77a35537dae4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D",
+      "quantity": 100
+    },
+    {
+      "_id": "66bf6b379ecbc32ce0bdeab3",
+      "name": "Macbook Pro",
+      "price": 449.99,
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D",
+      "quantity": 6
+    }
+  ]
+  
