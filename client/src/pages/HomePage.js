@@ -42,6 +42,7 @@ const Products = () => {
                     src={p.image}
                     className="card-img-top"
                     alt={p.name}
+                    style={{ height: "200px", objectFit: "cover" }} 
                   />
                   <div className="card-body">
                     <h5 className="card-title">{p.name}</h5>
