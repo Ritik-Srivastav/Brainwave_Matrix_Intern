@@ -22,7 +22,7 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <Link to="/" className="navbar-brand">
-            🛒 Shoppify
+            🛒 React Cart
           </Link>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
             <li className="nav-item">
